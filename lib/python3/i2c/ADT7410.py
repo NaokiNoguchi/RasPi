@@ -9,7 +9,7 @@ def read_adt7410(address_adt7410,register_adt7410):
     if data & 0x1000 == 0:
         temperature = data / 16
     else : 
-        temperature = (data - 8192) /16
+        temperature = (data - 8192) / 16
     return temperature
 
 if __name__ == '__main__':
